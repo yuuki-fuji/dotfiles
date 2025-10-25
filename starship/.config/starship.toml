@@ -100,7 +100,13 @@ min_time = 0
 format = '[](bold fg:yellow)[󰪢 $duration](bold bg:yellow fg:black)[](bold fg:yellow)'
 
 [custom.face]
-command = "echo \"(*'-') < \""   # ← 顔文字
+command = """
+shuf -n1 -e \
+  "(*'-') < Hello" \
+  "(*'-') < Good luck" \
+  "(*'-') < Keep it up." \
+  "(*'-') < Do your best."
+"""
 when = "true"
 style = "bold yellow"
 format = "$output"
