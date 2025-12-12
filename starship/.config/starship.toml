@@ -1,7 +1,7 @@
 # Don't print a new line at the start of the prompt
 add_newline = false
 # Pipes ╰─ ╭─
-# Powerline symbols                                    
+# Powerline symbols                                     
 # Wedges 🭧🭒 🭣🭧🭓
 # Random noise 🬖🬥🬔🬗
 # Cool stuff 󰜥   
@@ -11,7 +11,7 @@ add_newline = false
 # $character
 # """
 format = """
-$cmd_duration 󰜥 $directory $git_branch ${custom.face}
+$cmd_duration 󰜥 $directory $git_branch
 $character"""
 
 # Replace the "❯" symbol in the prompt with "➜"
@@ -98,30 +98,3 @@ format = '[](bold fg:green)[󰉋 $path]($style)[](bold fg:green)'
 [cmd_duration]
 min_time = 0
 format = '[](bold fg:yellow)[󰪢 $duration](bold bg:yellow fg:black)[](bold fg:yellow)'
-
-[custom.face]
-command = """
-shuf -n1 -e \
-  "(*'-') < Hello" \
-  "(*'-') < Good luck" \
-  "(*'-') < Keep it up." \
-  "(*'-') < Do your best." \
-  "(*'-') < You can do it!" \
-  "(*'-') < Have a nice day!" \
-  "(*'-') < おはよう！" \
-  "(*'-') < まじかーー" \
-  "(*'-') < がんばれー！" \
-  "(*'-') < ふぁいとっ！" \
-  "(*'-') < 休憩しよ☕" \
-  "(*'-') < よくやった！" \
-  "(*'-') < コーヒー飲みたい☕" \
-  "(*'-') < もしかして天才かも？🤔" \
-  "(*'-') < まだ慌てる時間じゃない…" \
-  "(*'-') < Error？仕様です😎" \
-  "(*'-') < ごはん食べた？🍚" \
-  "(*'-') < おつかれ〜🍵" \
-  "(*'-') < ま、いっか"
-"""
-when = "true"
-style = "bold yellow"
-format = "$output"
